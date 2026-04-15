@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Makeover Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+header h2 {
+  color: #e91e63;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e91e63;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 55px;
+  animation: fadeIn 2s ease;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.btn {
+  background: #e91e63;
+  padding: 12px 25px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c2185b;
+}
+
+/* SERVICES */
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #e91e63;
+}
+
+/* GALLERY */
+.gallery img {
+  width: 300px;
+  border-radius: 15px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* CONTACT */
+.contact a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background: #e91e63;
+  padding: 12px 20px;
+  border-radius: 25px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Makeover Studio</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>Enhance Your Natural Beauty</h1>
+    <p>Professional Makeup & Beauty Services</p>
+    <a href="https://wa.me/918849687516" class="btn">Book on WhatsApp</a>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Bridal Makeup</h3>
+      <p>Elegant bridal looks for your special day.</p>
+    </div>
+    <div class="card">
+      <h3>Hair Styling</h3>
+      <p>Trendy and classic hairstyles for every occasion.</p>
+    </div>
+    <div class="card">
+      <h3>Skin Care</h3>
+      <p>Glow-enhancing facials and treatments.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery" id="gallery">
+  <h2>Our Work</h2>
+  <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+  <img src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160">
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Book your appointment today!</p>
+
+  <a href="https://wa.me/918849687516">WhatsApp Us</a>
+  <a href="https://www.instagram.com/makeover_studio3?igsh=MWZmdDhvb3JpZGJ5cQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+</section>
+
+<a href="https://wa.me/918849687516" class="whatsapp">💬</a>
+
+<footer>
+  <p>© 2026 Makeover Studio | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
